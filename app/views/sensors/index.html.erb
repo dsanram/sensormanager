@@ -9,6 +9,7 @@
       <th>Estado</th>
       <th>Parametro</th>
       <th>Valor</th>
+      <th>Uds</th>
       <th></th>
       <th></th>
       <th></th>
@@ -24,6 +25,7 @@
         <td><%= sensor.estado %></td>
         <td><%= sensor.parametro %></td>
         <td><%= sensor.valor %></td>
+        <td><%= sensor.uds %></td>
         <td><%= link_to 'Show', sensor %></td>
         <td><%= link_to 'Edit', edit_sensor_path(sensor) %></td>
         <td><%= link_to 'Destroy', sensor, method: :delete, data: { confirm: 'Are you sure?' } %></td>

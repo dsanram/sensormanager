@@ -1,3 +1,3 @@
 class Medida < ActiveRecord::Base
-  belongs_to :Sensor
+  belongs_to :sensor
 end

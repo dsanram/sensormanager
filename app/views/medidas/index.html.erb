@@ -4,7 +4,6 @@
   <thead>
     <tr>
       <th>Sensor</th>
-      <th>Id</th>
       <th>Fecha</th>
       <th>Valor</th>
       <th></th>
@@ -16,8 +15,7 @@
   <tbody>
     <% @medidas.each do |medida| %>
       <tr>
-        <td><%= medida.Sensor %></td>
-        <td><%= medida.id %></td>
+        <td><%= medida.sensor %></td>
         <td><%= medida.fecha %></td>
         <td><%= medida.valor %></td>
         <td><%= link_to 'Show', medida %></td>

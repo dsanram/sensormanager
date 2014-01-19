@@ -18,7 +18,7 @@ class SensorsControllerTest < ActionController::TestCase
 
   test "should create sensor" do
     assert_difference('Sensor.count') do
-      post :create, sensor: { concentrador_id: @sensor.concentrador_id, descripcion: @sensor.descripcion, estado: @sensor.estado, nombre: @sensor.nombre, parametro: @sensor.parametro, valor: @sensor.valor }
+      post :create, sensor: { concentrador_id: @sensor.concentrador_id, descripcion: @sensor.descripcion, estado: @sensor.estado, nombre: @sensor.nombre, parametro: @sensor.parametro, uds: @sensor.uds, valor: @sensor.valor }
     end
 
     assert_redirected_to sensor_path(assigns(:sensor))
@@ -35,7 +35,7 @@ class SensorsControllerTest < ActionController::TestCase
   end
 
   test "should update sensor" do
-    patch :update, id: @sensor, sensor: { concentrador_id: @sensor.concentrador_id, descripcion: @sensor.descripcion, estado: @sensor.estado, nombre: @sensor.nombre, parametro: @sensor.parametro, valor: @sensor.valor }
+    patch :update, id: @sensor, sensor: { concentrador_id: @sensor.concentrador_id, descripcion: @sensor.descripcion, estado: @sensor.estado, nombre: @sensor.nombre, parametro: @sensor.parametro, uds: @sensor.uds, valor: @sensor.valor }
     assert_redirected_to sensor_path(assigns(:sensor))
   end
 

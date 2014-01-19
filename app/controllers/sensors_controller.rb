@@ -69,6 +69,6 @@ class SensorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sensor_params
-      params.require(:sensor).permit(:concentrador_id, :nombre, :descripcion, :estado, :parametro, :valor)
+      params.require(:sensor).permit(:concentrador_id, :nombre, :descripcion, :estado, :parametro, :valor, :uds)
     end
 end

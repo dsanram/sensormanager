@@ -69,6 +69,6 @@ class ConcentradorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def concentrador_params
-      params.require(:concentrador).permit(:categoria_equipos_id, :id, :nombre, :descripcion, :estado, :gis_latitud, :gis_longitud, :mac_address, :numero_serie, :ip_adrdress, :ip_port)
+      params.require(:concentrador).permit(:categoria_equipo_id, :nombre, :descripcion, :estado, :gis_latitud, :gis_longitud, :mac_address, :numero_serie, :ip_address, :ip_port)
     end
 end

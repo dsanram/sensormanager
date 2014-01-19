@@ -18,7 +18,7 @@ class MedidasControllerTest < ActionController::TestCase
 
   test "should create medida" do
     assert_difference('Medida.count') do
-      post :create, medida: { Sensor_id: @medida.Sensor_id, fecha: @medida.fecha, id: @medida.id, valor: @medida.valor }
+      post :create, medida: { fecha: @medida.fecha, sensor_id: @medida.sensor_id, valor: @medida.valor }
     end
 
     assert_redirected_to medida_path(assigns(:medida))
@@ -35,7 +35,7 @@ class MedidasControllerTest < ActionController::TestCase
   end
 
   test "should update medida" do
-    patch :update, id: @medida, medida: { Sensor_id: @medida.Sensor_id, fecha: @medida.fecha, id: @medida.id, valor: @medida.valor }
+    patch :update, id: @medida, medida: { fecha: @medida.fecha, sensor_id: @medida.sensor_id, valor: @medida.valor }
     assert_redirected_to medida_path(assigns(:medida))
   end
 
