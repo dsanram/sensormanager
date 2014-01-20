@@ -19,7 +19,7 @@
   <tbody>
     <% @sensors.each do |sensor| %>
       <tr>
-        <td><%= sensor.concentrador %></td>
+        <td><%= sensor.concentrador.nombre %></td>
         <td><%= sensor.nombre %></td>
         <td><%= sensor.descripcion %></td>
         <td><%= sensor.estado %></td>
